@@ -70,7 +70,7 @@ div.first_container {
     height: 30vh;
     display: grid;
     grid-template-columns: 20% 1fr 1fr;
-    grid-template-rows: 1fr 60% 1fr;
+    grid-template-rows: 10% 70% 20%;
     grid-area: 1 / 1 / 4 / 1;
     background-color: transparent;
 }
@@ -171,11 +171,10 @@ div.first_container {
     position: relative;
     overflow: hidden;
     display: grid;
-    gap: 1rem;
     align-items: center;
     width: 100%;
     height: 48rem;
-    grid-template-columns: 10rem auto 5rem auto 10rem;
+    grid-template-columns: 6rem auto 5rem auto 6rem;
     grid-template-rows: 2rem auto;
     bottom: 0px;
     background-color: #212075;
@@ -188,14 +187,9 @@ div.first_container {
 
 .about_left {
     display: flex;
+    flex-direction: column;
     position: absolute;
-    border: 2px solid red;
-
     grid-area: 2 / 2 / 3 / 3;
-    width: 100%;
-    color: #ffffff;
-    width: 100%;
-
 }
 
 .about_right {
@@ -204,28 +198,27 @@ div.first_container {
     grid-template-rows: auto;
     position: absolute;
     color: #ffffff;
-    border: 1px solid red;
     width: 100%;
     grid-area: 2 / 4 / 3 / 5;
 }
 
 img#splash {
-    width: 28rem;
-    height: auto;
+    width: 40rem;
+    height: 48rem;
     display: block;
     object-fit: cover;
-    margin: auto;
+    z-index: 2;
 }
 
 .imageleft1 {
-    margin: auto;
+
     display: flex;
     flex-direction: column;
     justify-items: center;
-
-    /* width: 100%;
-    height: 100%; */
-
+    width: 100%;
+    height: 45rem;
+    margin: auto;
+    color: #ffffff;
 }
 
 .textRight1 {
@@ -236,18 +229,19 @@ img#splash {
     justify-items: center;
     row-gap: 1rem;
     justify-content: space-between;
-
-    #aboutDigitalText {
-        font-family: 'Lato', sans-serif;
-        font-size: 4rem;
-    }
-
 }
 
-.digitaltext {
+    div#aboutDigitalText {
+        font-family: 'Lato', sans-serif;
+        font-size: 3.5rem;
+    }
+
+
+div.digitaltext {
     font-size: 2rem;
     font-family: monospace;
     font-weight: 300;
+    padding: 3rem;
 }
 
 /* section #services {
@@ -268,7 +262,6 @@ img#splash {
     position: relative;
     min-height: 100%;
     min-width: 100%;
-
 }
 
 .services2 {
@@ -289,7 +282,6 @@ img#splash {
     justify-content: flex-start;
     width: 100%;
     height: auto;
-    border: 2px solid red;
 }
 
 p#DCS {
@@ -316,6 +308,7 @@ p#DCS {
     grid-template-rows: 0.6rem 1fr;
     gap: 5rem;
     width: 100%;
+    animation: 1.5s ease-out 0s 1 forwards slideToTop;
 }
 
 .imgtext1,
@@ -324,10 +317,10 @@ p#DCS {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .imgtext1 {
-    border: 1px solid red;
     height: 35rem;
     width: 100%;
     position: relative;
@@ -335,7 +328,6 @@ p#DCS {
 }
 
 .imgtext2 {
-    border: 1px solid red;
     height: 35rem;
     width: 100%;
     position: relative;
@@ -343,14 +335,12 @@ p#DCS {
 }
 
 .imgtext3 {
-    border: 1px solid red;
     height: 35rem;
     width: 100%;
     grid-area: 2 / 4 / 3 / 5;
 }
 
 img {
-
     display: block;
     width: 100%;
     height: 28rem;
@@ -360,20 +350,24 @@ img {
 .imgtext1,
 .imgtext2,
 .imgtext3 {
-    position: relative;
+       position: relative;
+           background-color: #ffffff;
+           
 }
 
 .titleText {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Lato', sans-serif;
     color: #d73cbe;
     text-align: center;
+    padding: 1rem;
 }
 
 .description {
     font-size: 1.5rem;
     font-family: 'Lato', sans-serif;
-    color: white;
+    color: rgb(47, 46, 46);
+  padding: 1rem;
     text-align: center;
 }
 
@@ -409,9 +403,8 @@ p#faq {
     display: grid;
     grid-template-columns: 2rem 1fr 1fr 1fr 2rem;
     grid-template-rows: 1fr 1fr;
-    column-gap: 4rem;
+    column-gap: 3.5rem;
     height: 35rem;
-    /* border: 1px solid red; */
 }
 
 .question1 {
@@ -450,7 +443,7 @@ p#questions {
 
 p#answers {
     color: rgb(65, 64, 64);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-family: 'Lato', sans-serif;
     padding: 0.5rem;
 
@@ -489,15 +482,16 @@ section#reviews {
     overflow: hidden;
     display: grid;
     align-items: center;
-    /* grid-template-columns: auto 100rem auto; */
     z-index: 0;
     margin-top: -1px;
 }
 
 .early {
-    grid-template-columns: 10rem 1fr 1fr 1fr 10rem;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 6rem 1fr 1fr 1fr 6rem;
     display: grid;
+    grid-template-rows: 3rem repeat(3, 12rem);
+    column-gap: 1rem;
+    row-gap: 2rem;
     position: relative;
     height: 100%;
     width: 100%;
@@ -505,8 +499,149 @@ section#reviews {
 
 .reviews {
     color: #ffffff;
-    font-size: 4rem;
+    font-size: 3.5rem;
+    height: 5rem;
+    width: 100%;
+    text-align: center;
     display: grid;
     position: relative;
-    grid-area: 1 / 2 / 2 / 3
+    grid-area: 2 / 2 / 2 / 3
+    
+}
+
+.testimonials1 {
+    display: grid;
+        grid-area: 2 / 3 / 3 / 5;
+    border: 1px dotted white;
+}
+p#reviews {
+    font-family: 'Lato', sans-serif;
+}
+.testimonials2 {
+    display: grid;
+    grid-area: 3 / 3 / 4 / 5;
+    border: 1px dotted white;
+}
+
+.testimonials3 {
+    display: grid;
+    grid-area: 4 / 3 / 5 / 5;
+    border: 1px dotted white;
+}
+
+span#testimonials {
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 2rem 2rem 0;
+    font-family:'Lato', sans-serif;
+}
+p#testimonial-name {
+    color: #d73cbe;
+    font-size: 1.7rem;
+      font-family: 'Lato', sans-serif;
+    padding:  0 2rem;
+}
+.gridleft {
+    display: grid;
+    height: auto;
+    grid-area: 2 / 2 / 5 / 3;
+}
+
+.imgcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+img#blob {
+    object-fit: contain;
+    padding-top: 2rem;
+}
+
+.contacts {
+    display: grid;
+    grid-template-rows: 6rem 8rem 3rem 8rem 8rem 12rem;
+    grid-template-columns: 6rem 3.5rem 10rem repeat(4, 1fr);
+    height: 46rem;
+    background-color: #212075;
+}
+
+.leftcontacts {
+    display: grid;
+    grid-area: 2 / 2 / 3 / 6;
+    font-size: 3.3rem;
+    font-family: "Lato";
+    color: #ffffff;
+}
+
+.phone {
+    display: grid;
+    grid-area: 4 / 2 / 5 / 5;
+
+}
+
+.phone2 {
+    font-size: 2.3rem;
+    font-family: "Lato";
+    color: #ffffff;
+}
+
+.phone3 {
+    padding-bottom: 1.5rem;
+}
+
+.email {
+    display: grid;
+    grid-area: 5 / 2 / 6 / 4;
+    font-size: 2.3rem;
+    font-family: "Lato";
+    color: #ffffff;
+}
+
+.social {
+    display: grid;
+    grid-area: 6/ 2 / 7 / 5;
+    justify-items:center;
+    font-size: 2.3rem;
+    letter-spacing: 0.5rem;
+    font-family: "Lato";
+    font-weight: 700;
+    color: #ffffff;
+}
+p#social {
+    margin:  2rem auto 0 auto;
+}
+.social-container {
+    display: grid;
+    grid-area: 2 / 1 / 3 / 4;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+    z-index: 2;
+}
+
+.social-inner {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    margin: auto;
+border: 1px dotted white;
+}
+
+img#social {
+    display: block;
+    object-fit: contain;
+    width: 3rem;
+    height: 3rem;
+        margin: auto;
+}
+
+p.phone-email {
+    color: #D63CBE;
+    font-size: 2rem;
 }

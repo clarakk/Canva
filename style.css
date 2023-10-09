@@ -5,6 +5,7 @@
 
         }
 
+        body {}
 
         @media (prefers-reduced-motion: reduce) {
             .animated {
@@ -153,8 +154,69 @@
             #horizontalMenu {
                 display: none;
             }
-        }
 
+            div.sinistro {
+                width: auto;
+            }
+
+            div.first_container,
+            div.container2,
+            div.about_left,
+            div.imageleft1,
+            div.about_right,
+            div.titleClarak,
+             {
+                position: relative;
+                display: block;
+                margin: auto;
+            }
+
+            div.titleClarak {
+                margin-top: 11rem;
+            }
+
+            span#nome {
+                display: block;
+                font-size: 5rem;
+                padding-top: 1rem;
+            }
+#ck {
+    font-size: 5.5rem;
+    color: #ffffff;
+}
+span#mese {
+    font-size: 4.5rem;
+}
+            div.container2 {
+                height: 100%;
+                padding: 0 4rem 3rem;
+                text-align: justify;
+            }
+
+            img#splash {
+                display: block;
+                position: relative;
+                margin: auto;
+            }
+
+            div#aboutDigitalText {
+                padding: 0 6rem;
+                font-size: 6rem;
+            }
+
+            div.digitaltext {
+                font-size: 4rem;
+                padding: 0 6rem;
+            }
+
+            div.imgstexts {
+                display: block;
+                width: 70%;
+                    height: 28rem;
+                    margin: auto;
+            }
+        }
+              
         @media (min-width: 501px) {
 
             #menuButton,
@@ -163,13 +225,14 @@
             }
         }
 
-        
+
         /* @media (min-width: 1024.05px) {
                 .title {
                     grid-area: 4 / 2 / 5 / 5;
                     grid-template-columns: 0 0 31.80044688rem 41.27730898rem;
                     grid-template-rows: 0 minmax(13.03053782rem, max-content) minmax(1.88311148rem, max-content) minmax(3.00613602rem, max-content);
                 } */
+
 
         html {
             scroll-padding-top: 50px;

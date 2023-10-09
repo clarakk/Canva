@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animazione</title>
+</head>
+
+<body>
+    <div id="animazione"></div>
+    <style>
+        div#animazione {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove 3s;
+            /* animation-timing-function: step-end; */
+            animation-fill-mode: both;
+        }
+
+        @keyframes mymove {
+            from {
+                top: 200px;
+                background-color: yellow;
+            }
+
+            to {
+                top: 0px;
+            }
+        }
+
+        @keyframes mymove2 {
+            from {
+                top: 200px;
+
+            }
+
+            to {
+                top: 0px;
+                color: red;
+            }
+        }
+
+    </style>
+
+    <div id=“provanim” style="opacity:1.0;
+    display:flex;
+    box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;
+    position: absolute;
+    margin-top: 200px;
+    animation: mymove2 3s ease both">
+
+        <p
+            style="color:#131212;direction:ltr;font-family:YACgEV9owk4-0;margin-left:0em;line-height:1.49999732em;text-align:left;text-transform:none;letter-spacing:0em;">
+            <span style="color:#131212;
+        animation: mymove2 3s ease both;">
+                What's special about your product, service, or company? Use
+                this space to highlight the things that set you apart from your competition, whether it's a special
+                feature,
+                a unique philosophy, or awards and recognition that you have received. Think of this as your elevator
+                pitch
+                to get the reader's attention.</span><br>
+        </p>
+    </div>
+</body>
+
+</html>
