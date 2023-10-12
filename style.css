@@ -161,11 +161,20 @@
 
             div.first_container,
             div.container2,
+            div.container3,
             div.about_left,
             div.imageleft1,
             div.about_right,
             div.titleClarak,
-             {
+            div.questions,
+            div.container4,
+            div.description,
+            div.imgtext1,
+            div.imgtext2,
+            div.imgtext3,
+            img#sinistra,
+            img#centrale,
+            img#destra {
                 position: relative;
                 display: block;
                 margin: auto;
@@ -180,13 +189,16 @@
                 font-size: 5rem;
                 padding-top: 1rem;
             }
-#ck {
-    font-size: 5.5rem;
-    color: #ffffff;
-}
-span#mese {
-    font-size: 4.5rem;
-}
+
+            #ck {
+                font-size: 5.5rem;
+                color: #ffffff;
+            }
+
+            span#mese {
+                font-size: 4.5rem;
+            }
+
             div.container2 {
                 height: 100%;
                 padding: 0 4rem 3rem;
@@ -211,18 +223,123 @@ span#mese {
 
             div.imgstexts {
                 display: block;
-                width: 70%;
-                    height: 28rem;
-                    margin: auto;
+                width: 85%;
+                height: 40rem;
+                margin: auto;
             }
+
+            div.services2 {
+                height: 150rem;
+                padding: 3rem 0;
+            }
+
+            div.questions {
+                height: 100rem;
+            }
+
+            div.a1,
+            div.a2,
+            div.a3 {
+                height: 20rem;
+                background-color: #ffffff;
+                padding: 2rem;
+            }
+
+
+            p#questions,
+            p#answers {
+                font-size: 4rem;
+            }
+
+            div.titleText,
+            div.description,
+            div.imgtext1,
+            div.imgtext2,
+            div.imgtext3 {
+                display: block;
+                font-size: 3.5rem;
+            }
+
+            div.description#terza {
+
+                height: 20rem;
+            }
+
+            div.imgtext1,
+            div.imgtext2,
+            div.imgtext3,
+            div.description {
+                z-index: 5;
+                height: 45rem;
+            }
+
+            div.imgtext3 {
+                height: 20rem;
+            }
+
+            img {
+                display: block;
+            }
+
+            section#reviews,
+            div.container4,
+            div.early {
+                display: flex;
+            }
+
+            div.early {
+                display: block;
+            }
+
+            div.testimonials1,
+            div.testimonials2,
+            div.testimonials3 {
+                height: 30rem;
+                margin: 3rem;
+                padding: 3rem;
+            }
+
+            div.contacts {
+                display: block;
+                height: 40rem;
+                margin: 0 7rem;
+            }
+
+            div.leftcontacts,
+            div.phone2,
+            div.email,
+            p.phone-email
+            {
+            font-size: 4rem;
         }
-              
+        div.social-inner {
+            width: 30rem;
+            height: 7rem;
+            margin: 3rem 7rem;
+        }
+        div.contacts {
+          height: 50rem;
+          display: block;
+        }
+img#social {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+        span#testimonials {
+            font-size: 3.5rem;
+        }
+    }
+        
+
         @media (min-width: 501px) {
 
             #menuButton,
             #verticalMenu {
                 display: none;
             }
+
+
         }
 
 
